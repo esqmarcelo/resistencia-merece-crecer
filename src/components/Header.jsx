@@ -4,6 +4,7 @@ function Header() {
   return (
     <header className="header">
       <div className="header-logo">
+        <img src="/logo.png" alt="Logo Resistencia Merece Crecer" className="header-logo-img" />
         Resistencia Merece Crecer
       </div>
       <nav className="header-nav">

@@ -11,7 +11,7 @@ body {
 }
 
 .header {
-  background-color: #0a2540;
+  background-color: #2778c9;
   color: white;
   display: flex;
   align-items: center;
@@ -23,9 +23,16 @@ body {
 }
 
 .header-logo {
-  font-size: 22px;
+  font-size: 25px;
   font-weight: bold;
   color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-logo-img {
+  height: 60px;
 }
 
 .header-nav {
@@ -36,7 +43,7 @@ body {
 .header-nav a {
   color: white;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 500;
 }
 
@@ -46,7 +53,7 @@ body {
 .hero {
   height: 90vh;
   background-size: cover;
-  background-position: center;
+  background-position: 70% 20%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,6 +64,11 @@ body {
   color: white;
   max-width: 700px;
   padding: 20px;
+}
+
+.hero-logo {
+  height: 200px;
+  margin-bottom: 20px;
 }
 
 .hero-title {
