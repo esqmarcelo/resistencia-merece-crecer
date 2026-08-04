@@ -20,6 +20,7 @@ body {
   font-family: 'Inter', sans-serif;
   background-color: #f4f6f9;
   color: #1a1a1a;
+  
 }
 
 h1,
@@ -37,7 +38,7 @@ h3 {
 .header {
   background-color: #2778c9;
   color: white;
-  padding: 15px 30px;
+  padding: 10px 30px;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -50,7 +51,7 @@ h3 {
 }
 
 .header-logo {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
   color: #ffffff;
   display: flex;
@@ -59,7 +60,7 @@ h3 {
 }
 
 .header-logo-img {
-  height: 60px;
+  height: 50px;
 }
 
 .header-nav {
@@ -70,7 +71,7 @@ h3 {
 .nav-link {
   color: white;
   text-decoration: none;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 500;
 }
 
