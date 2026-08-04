@@ -323,6 +323,14 @@ h3 {
   .integrantes-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .header-logo {
+    font-size: 16px;
+  }
+
+  .header-logo-img {
+    height: 30px;
+  }
 }
 
 .eventos-grid {
