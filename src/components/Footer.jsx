@@ -9,7 +9,7 @@ function Footer() {
             <img src="/logo.png" alt="Logo" className="footer-logo-img" />
             Resistencia Merece Crecer
           </div>
-          <p>Un movimiento por y para nuestra gente, trabajando por un Chaco más justo.</p>
+          <p>Una organización política por y para nuestra gente, trabajando por un Chaco más justo.</p>
         </div>
 
         <div className="footer-col">

@@ -44,7 +44,7 @@ function Inicio() {
           </div>
           <div className="card">
             <h3>Jornada de Militancia</h3>
-            <p>Domingo 23 de agosto, 10hs — Sede del movimiento</p>
+            <p>Domingo 23 de agosto, 10hs — Sede de la organización política</p>
           </div>
         </div>
       </section>
