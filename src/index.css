@@ -7,7 +7,7 @@
   --color-texto-principal: #0a2540;
   --color-texto-secundario: #444;
   --font-size-titulo: 28px;
-  --font-size-texto: 20px;
+  --font-size-texto: 15px;
 }
 
 * {
@@ -650,7 +650,7 @@ h3 {
   margin: 0 auto 40px;
   color: #555;
   line-height: 1.6;
-  font-size: 20px;
+  font-size: 19px;
 }
 
 .redes-grid {
