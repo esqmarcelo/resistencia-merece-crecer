@@ -293,6 +293,9 @@ h3 {
 @media (max-width: 768px) {
   .menu-toggle {
     display: flex;
+    width: 22px;
+    height: 16px;
+    align-self: center;
   }
 
   .header-nav {
@@ -309,6 +312,7 @@ h3 {
 
   .header-inner {
     flex-wrap: wrap;
+    align-items: center;
   }
 
   .hero-title {
