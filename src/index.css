@@ -331,6 +331,14 @@ h3 {
   .header-logo-img {
     height: 30px;
   }
+
+  .mision-imagen {
+    height: auto;
+  }
+
+  .mision-imagen img {
+    height: auto;
+  }
 }
 
 .eventos-grid {
