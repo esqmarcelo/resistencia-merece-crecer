@@ -17,7 +17,13 @@ function QuienesSomos() {
               derechos y trabajando codo a codo con cada barrio de Chaco.
             </p>
           </div>
-          <div className="mision-imagen"></div>
+          <div className="mision-imagen">
+            <img
+              src="/quienesomos.jpg"
+              alt="Resistencia Merece Crecer"
+              style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '8px' }}
+            />
+          </div>
         </div>
 
         <h2>Nuestras Propuestas</h2>
