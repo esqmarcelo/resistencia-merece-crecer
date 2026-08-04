@@ -24,6 +24,11 @@ function SwipeWrapper({ children }) {
   return (
     <div {...handlers} className="swipe-area">
       {children}
+      <div className="swipe-hint">
+        <span>‹</span>
+        <span>Deslizá para navegar</span>
+        <span>›</span>
+      </div>
     </div>
   )
 }
