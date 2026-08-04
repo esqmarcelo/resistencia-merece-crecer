@@ -444,38 +444,46 @@ h3 {
   }
 }
 
-.swipe-hint {
+.swipe-arrow {
   display: none;
 }
 
 @media (max-width: 768px) {
-  .swipe-hint {
+  .swipe-arrow {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
     position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(10, 37, 64, 0.85);
+    top: 50%;
+    transform: translateY(-50%);
+    width: 36px;
+    height: 36px;
+    background-color: rgba(10, 37, 64, 0.5);
     color: white;
-    padding: 8px 16px;
-    border-radius: 20px;
-    font-size: 13px;
+    border-radius: 50%;
+    font-size: 22px;
     z-index: 50;
+    pointer-events: none;
     animation: pulso 2s infinite;
+  }
+
+  .swipe-arrow-left {
+    left: 10px;
+  }
+
+  .swipe-arrow-right {
+    right: 10px;
   }
 }
 
 @keyframes pulso {
   0%,
   100% {
-    opacity: 0.7;
+    opacity: 0.4;
   }
 
   50% {
-    opacity: 1;
+    opacity: 0.9;
   }
 }
 
