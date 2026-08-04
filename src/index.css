@@ -324,3 +324,71 @@ h3 {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+.eventos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.evento-card {
+  display: flex;
+  gap: 16px;
+  background-color: white;
+  border: 1px solid #dde3ea;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.evento-fecha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #4a90d9;
+  color: white;
+  border-radius: 6px;
+  min-width: 60px;
+  height: 60px;
+}
+
+.evento-mes {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.evento-dia {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.evento-info h3 {
+  font-size: 16px;
+  color: #0a2540;
+  margin: 6px 0;
+}
+
+.evento-info p {
+  font-size: 13px;
+  color: #666;
+  margin: 2px 0;
+}
+
+.evento-categoria {
+  font-size: 11px;
+  font-weight: bold;
+  padding: 3px 10px;
+  border-radius: 12px;
+  display: inline-block;
+}
+
+.categoria-comunidad {
+  background-color: #dce9f9;
+  color: #1a5fa8;
+}
+
+.categoria-militancia {
+  background-color: #d9f0e1;
+  color: #1a8c4a;
+}

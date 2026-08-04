@@ -37,14 +37,30 @@ function Inicio() {
 
       <section className="container inicio-preview">
         <h2>Próximos Eventos</h2>
-        <div className="cards-grid">
-          <div className="card">
-            <h3>Asamblea Vecinal</h3>
-            <p>Sábado 15 de agosto, 17hs — Plaza 25 de Mayo</p>
+        <div className="eventos-grid">
+          <div className="evento-card">
+            <div className="evento-fecha">
+              <span className="evento-mes">AGO</span>
+              <span className="evento-dia">15</span>
+            </div>
+            <div className="evento-info">
+              <span className="evento-categoria categoria-comunidad">Comunidad</span>
+              <h3>Asamblea Vecinal</h3>
+              <p>🕐 17:00 hs</p>
+              <p>📍 Plaza 25 de Mayo</p>
+            </div>
           </div>
-          <div className="card">
-            <h3>Jornada de Militancia</h3>
-            <p>Domingo 23 de agosto, 10hs — Sede de la organización política</p>
+          <div className="evento-card">
+            <div className="evento-fecha">
+              <span className="evento-mes">AGO</span>
+              <span className="evento-dia">23</span>
+            </div>
+            <div className="evento-info">
+              <span className="evento-categoria categoria-militancia">Militancia</span>
+              <h3>Jornada de Militancia</h3>
+              <p>🕐 10:00 hs</p>
+              <p>📍 Sede del movimiento</p>
+            </div>
           </div>
         </div>
       </section>

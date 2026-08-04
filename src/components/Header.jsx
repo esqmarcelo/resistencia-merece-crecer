@@ -19,7 +19,7 @@ function Header() {
             to="/quienes-somos"
             className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}
           >
-            Quiénes Somos
+            ¿Quiénes Somos?
           </NavLink>
           <NavLink
             to="/galeria"
