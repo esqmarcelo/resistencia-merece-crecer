@@ -28,6 +28,11 @@ function SwipeWrapper({ children }) {
   }
 
   useEffect(() => {
+    if (location.pathname === '/') {
+      setMostrarToast(false)
+      return
+    }
+
     setMostrarToast(true)
 
     const timeoutId = setTimeout(() => {
