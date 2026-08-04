@@ -347,12 +347,19 @@ h3 {
   }
 
   .header-logo {
-    font-size: 14px;
-    gap: 6px;
+    font-size: 17px;
+    gap: 8px;
   }
 
   .header-logo-img {
-    height: 24px;
+    height: 28px;
+  }
+
+  .header-logo span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 140px;
   }
 
   .mision-imagen {
