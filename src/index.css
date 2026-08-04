@@ -399,6 +399,35 @@ h3 {
   height: 60px;
 }
 
+.galeria-section {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.galeria-section h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #0a2540;
+}
+
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.galeria-item {
+  aspect-ratio: 1 / 1;
+  background-color: #dde3ea;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .galeria-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .evento-mes {
   font-size: 12px;
   font-weight: bold;
