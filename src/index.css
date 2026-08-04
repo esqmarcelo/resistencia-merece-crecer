@@ -463,7 +463,8 @@ h3 {
     border-radius: 50%;
     font-size: 22px;
     z-index: 50;
-    pointer-events: none;
+    border: none;
+    cursor: pointer;
     animation: pulso 2s infinite;
   }
 
@@ -473,6 +474,37 @@ h3 {
 
   .swipe-arrow-right {
     right: 10px;
+  }
+}
+
+.section-dots {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .section-dots {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    position: fixed;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 50;
+  }
+
+  .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgba(10, 37, 64, 0.3);
+    transition: background-color 0.3s;
+  }
+
+  .dot-active {
+    background-color: #0a2540;
+    width: 20px;
+    border-radius: 4px;
   }
 }
 
