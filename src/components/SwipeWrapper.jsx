@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 import { useSwipeable } from 'react-swipeable'
 
@@ -11,6 +12,7 @@ const rutas = [
 function SwipeWrapper({ children }) {
   const navigate = useNavigate()
   const location = useLocation()
+  const [mostrarToast, setMostrarToast] = useState(false)
 
   const currentIndex = rutas.findIndex((ruta) => ruta.path === location.pathname)
   const safeIndex = currentIndex === -1 ? 0 : currentIndex
@@ -24,6 +26,16 @@ function SwipeWrapper({ children }) {
     const previousIndex = (safeIndex - 1 + rutas.length) % rutas.length
     navigate(rutas[previousIndex].path)
   }
+
+  useEffect(() => {
+    setMostrarToast(true)
+
+    const timeoutId = setTimeout(() => {
+      setMostrarToast(false)
+    }, 2000)
+
+    return () => clearTimeout(timeoutId)
+  }, [location.pathname])
 
   const handlers = useSwipeable({
     onSwipedLeft: irSiguiente,
@@ -47,6 +59,9 @@ function SwipeWrapper({ children }) {
           ></span>
         ))}
       </div>
+      {mostrarToast && (
+        <div className="section-toast">{rutas[safeIndex].label}</div>
+      )}
     </div>
   )
 }

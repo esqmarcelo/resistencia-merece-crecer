@@ -519,6 +519,48 @@ h3 {
   }
 }
 
+.section-toast {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .section-toast {
+    display: block;
+    position: fixed;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(10, 37, 64, 0.9);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    z-index: 60;
+    animation: toastFade 2s ease forwards;
+  }
+}
+
+@keyframes toastFade {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-10px);
+  }
+
+  15% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+
+  85% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
 .evento-mes {
   font-size: 12px;
   font-weight: bold;
