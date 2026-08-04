@@ -35,9 +35,15 @@ function Header() {
           </NavLink>
         </nav>
         <button className="menu-toggle" onClick={() => setMenuAbierto(!menuAbierto)}>
-          <span></span>
-          <span></span>
-          <span></span>
+          {menuAbierto ? (
+            <span className="menu-close">✕</span>
+          ) : (
+            <>
+              <span></span>
+              <span></span>
+              <span></span>
+            </>
+          )}
         </button>
       </div>
     </header>
