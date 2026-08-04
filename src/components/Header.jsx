@@ -1,18 +1,37 @@
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 function Header() {
   return (
     <header className="header">
-      <div className="header-logo">
-        <img src="/logo.png" alt="Logo Resistencia Merece Crecer" className="header-logo-img" />
-        Resistencia Merece Crecer
+      <div className="container header-inner">
+        <div className="header-logo">
+          <img src="/logo.png" alt="Logo Resistencia Merece Crecer" className="header-logo-img" />
+          Resistencia Merece Crecer
+        </div>
+        <nav className="header-nav">
+          <NavLink to="/" className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}>
+            Inicio
+          </NavLink>
+          <NavLink
+            to="/quienes-somos"
+            className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}
+          >
+            Quiénes Somos
+          </NavLink>
+          <NavLink
+            to="/galeria"
+            className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}
+          >
+            Galería
+          </NavLink>
+          <NavLink
+            to="/contacto"
+            className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}
+          >
+            Contacto
+          </NavLink>
+        </nav>
       </div>
-      <nav className="header-nav">
-        <Link to="/">Inicio</Link>
-        <Link to="/quienes-somos">Quiénes Somos</Link>
-        <Link to="/galeria">Galería</Link>
-        <Link to="/contacto">Contacto</Link>
-      </nav>
     </header>
   )
 }
