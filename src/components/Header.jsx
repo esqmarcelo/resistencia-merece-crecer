@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom'
 
 function Header() {
   const [menuAbierto, setMenuAbierto] = useState(false)
+  const cerrarMenu = () => setMenuAbierto(false)
 
   return (
     <header className="header">
@@ -12,24 +13,31 @@ function Header() {
           Resistencia Merece Crecer
         </div>
         <nav className={`header-nav ${menuAbierto ? 'open' : ''}`}>
-          <NavLink to="/" className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}>
+          <NavLink
+            to="/"
+            className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}
+            onClick={cerrarMenu}
+          >
             Inicio
           </NavLink>
           <NavLink
             to="/quienes-somos"
             className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}
+            onClick={cerrarMenu}
           >
             ¿Quiénes Somos?
           </NavLink>
           <NavLink
             to="/galeria"
             className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}
+            onClick={cerrarMenu}
           >
             Galería
           </NavLink>
           <NavLink
             to="/contacto"
             className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}
+            onClick={cerrarMenu}
           >
             Contacto
           </NavLink>
