@@ -11,7 +11,7 @@ function Inicio() {
           <img src="/logo.png" alt="Logo Resistencia Merece Crecer" className="hero-logo" />
           <h1 className="hero-title">Resistencia Merece Crecer</h1>
           <p className="hero-subtitle">Una organización política por y para nuestra gente</p>
-          <a href="/quienes-somos" className="hero-btn">Conócenos</a>
+          <a href="/quienes-somos" className="hero-btn">Conocenos</a>
         </div>
       </section>
 
