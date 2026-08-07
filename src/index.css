@@ -40,7 +40,6 @@ h3 {
   color: white;
   padding: 10px 30px;
   position: sticky;
-  position: relative;
   top: 0;
   z-index: 100;
 }
