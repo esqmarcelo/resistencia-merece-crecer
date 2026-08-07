@@ -30,7 +30,7 @@ function Inicio() {
           </div>
           <div className="card">
             <h3>Jornada solidaria en el centro comunitario</h3>
-            <p>Voluntarios del movimiento organizaron una entrega de mercadería a familias del barrio.</p>
+            <p>Voluntarios del la organización política organizaron una entrega de mercadería a familias del barrio.</p>
           </div>
         </div>
       </section>
@@ -59,7 +59,7 @@ function Inicio() {
               <span className="evento-categoria categoria-militancia">Militancia</span>
               <h3>Jornada de Militancia</h3>
               <p>🕐 10:00 hs</p>
-              <p>📍 Sede del movimiento</p>
+              <p>📍 Sede de la organización política</p>
             </div>
           </div>
         </div>
