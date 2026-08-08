@@ -177,7 +177,9 @@ h3 {
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 40px;
+  gap: 80px;
+  padding-top: 30px;
+  padding-left: 200px;
 }
 
 .footer-col h3 {
