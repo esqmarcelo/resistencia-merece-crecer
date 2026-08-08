@@ -45,7 +45,7 @@ function SwipeWrapper({ children }) {
   const handlers = useSwipeable({
     onSwipedLeft: irSiguiente,
     onSwipedRight: irAnterior,
-    delta: 100,
+    delta: 120,
   })
 
   return (
