@@ -170,7 +170,7 @@ h3 {
 .footer {
   background-color: #0a2540;
   color: white;
-  padding: 60px 0 30px;
+  padding: 15px 0 20px;
   margin-top: 60px;
 }
 
@@ -217,7 +217,13 @@ h3 {
   text-align: center;
   color: rgba(255, 255, 255, 0.5);
   margin-top: 40px;
+  padding-top: 25px;
   font-size: 14px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+
 }
 
 .inicio-preview {
