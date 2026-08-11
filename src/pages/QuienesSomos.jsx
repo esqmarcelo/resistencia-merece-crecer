@@ -1,4 +1,10 @@
+import { useState } from 'react';
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
+
 function QuienesSomos() {
+  const [imagenAmpliada, setImagenAmpliada] = useState(false);
+
   return (
     <section>
       <div className="container">
@@ -21,12 +27,31 @@ function QuienesSomos() {
             <img
               src="/quienesomos.jpg"
               alt="Resistencia Merece Crecer"
-              style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '8px' }}
+              onClick={() => setImagenAmpliada(true)}
+              style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '8px', cursor: 'pointer' }}
             />
           </div>
         </div>
 
         <h2>Nuestras Propuestas</h2>
+        {imagenAmpliada && (
+          <div className="imagen-modal" onClick={() => setImagenAmpliada(false)}>
+            <div onClick={(e) => e.stopPropagation()}>
+              <button
+                className="imagen-modal-cerrar"
+                onClick={(e) => {
+                  e.stopPropagation()
+                  setImagenAmpliada(false)
+                }}
+              >
+                ✕
+              </button>
+              <Zoom>
+                <img src="/quienesomos.jpg" alt="Resistencia Merece Crecer" className="imagen-modal-img" />
+              </Zoom>
+            </div>
+          </div>
+        )}
       </div>
     </section>
   )
