@@ -7,6 +7,7 @@ import Inicio from './pages/Inicio'
 import QuienesSomos from './pages/QuienesSomos'
 import Galeria from './pages/Galeria'
 import Contacto from './pages/Contacto'
+import NoticiaDetalle from './pages/NoticiaDetalle'
 
 function AppContent() {
   const location = useLocation()
@@ -35,6 +36,7 @@ function AppContent() {
         <div className="page-content" key={location.pathname}>
           <Routes>
             <Route path="/" element={<Inicio />} />
+            <Route path="/noticias/:id" element={<NoticiaDetalle />} />
             <Route path="/quienes-somos" element={<QuienesSomos />} />
             <Route path="/galeria" element={<Galeria />} />
             <Route path="/contacto" element={<Contacto />} />
