@@ -263,6 +263,15 @@ h3 {
   background-color: white;
   border: 1px solid #dde3ea;
   border-radius: 8px;
+  overflow: hidden;
+}
+
+.card-imagen {
+  height: 180px;
+  background-color: #dde3ea;
+}
+
+.card-contenido {
   padding: 20px;
 }
 

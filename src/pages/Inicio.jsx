@@ -21,16 +21,25 @@ function Inicio() {
         <h2>Últimas Noticias</h2>
         <div className="cards-grid">
           <div className="card">
-            <h3>Recorrida por el barrio Villa Río Negro</h3>
-            <p>El equipo visitó vecinos para escuchar sus reclamos sobre el estado de las calles.</p>
+            <div className="card-imagen"></div>
+            <div className="card-contenido">
+              <h3>Recorrida por el barrio Villa Río Negro</h3>
+              <p>El equipo visitó vecinos para escuchar sus reclamos sobre el estado de las calles.</p>
+            </div>
           </div>
           <div className="card">
-            <h3>Charla abierta sobre acceso a la vivienda</h3>
-            <p>Se realizó un encuentro comunitario para debatir propuestas habitacionales.</p>
+            <div className="card-imagen"></div>
+            <div className="card-contenido">
+              <h3>Charla abierta sobre acceso a la vivienda</h3>
+              <p>Se realizó un encuentro comunitario para debatir propuestas habitacionales.</p>
+            </div>
           </div>
           <div className="card">
-            <h3>Jornada solidaria en el centro comunitario</h3>
-            <p>Voluntarios del la organización política organizaron una entrega de mercadería a familias del barrio.</p>
+            <div className="card-imagen"></div>
+            <div className="card-contenido">
+              <h3>Jornada solidaria en el centro comunitario</h3>
+              <p>Voluntarios del la organización política organizaron una entrega de mercadería a familias del barrio.</p>
+            </div>
           </div>
         </div>
       </section>
