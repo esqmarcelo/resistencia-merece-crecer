@@ -151,6 +151,7 @@ h3 {
   line-height: 1.5;
   margin-bottom: var(--espacio-chico);
   color: var(--color-texto-secundario);
+  text-align: justify;
 }
 
 .mision-imagen {
@@ -161,6 +162,8 @@ h3 {
   height: 350px;
   background-color: #dde3ea;
   border-radius: 8px;
+   margin-top: -250px;
+  margin-left: 30px;
 }
 
 .header .container {
@@ -889,4 +892,31 @@ h3 {
 
 .evento-placeholder .evento-fecha {
   background-color: #dde3ea;
+}
+
+.quienes-intro {
+  max-width: 50%;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.quienes-intro p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+  text-align: justify;
+}
+
+.quienes-encuentro {
+  background-color: #eaf2fb;
+  border-left: 4px solid #4a90d9;
+  padding: 16px 20px;
+  border-radius: 6px;
+  margin: 30px 0;
+}
+
+.quienes-encuentro p {
+  font-weight: 600;
+  color: #0a2540;
+  font-size: 15px;
 }
