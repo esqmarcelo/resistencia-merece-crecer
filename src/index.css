@@ -462,7 +462,14 @@ h3 {
 
   .quienes-intro p,
   .mision-texto p {
-    text-align: left !important;
+    text-align: justify !important;
+    hyphens: auto;
+    word-spacing: normal;
+    text-justify: inter-word;
+  }
+
+  .quienes-intro {
+    max-width: 100% !important;
   }
 
   .mision-section {
