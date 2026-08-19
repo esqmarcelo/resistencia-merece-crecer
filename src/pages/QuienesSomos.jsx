@@ -12,9 +12,11 @@ function QuienesSomos() {
           <p>
             "Resistencia Merece Crecer" es una línea interna que nace de las raíces mismas del pueblo.
             Surgimos de la unión de referentes sociales y militantes justicialistas autoconvocados de
-            distintos sectores de la ciudad. A partir de diversos encuentros políticos, decidimos conformar
-            este espacio, convencidos de que, tanto en la vida como en la política, nadie te regala nada:
-            uno mismo debe construir su propio futuro.
+            distintos sectores de la ciudad.
+          </p>
+          <p>
+            A partir de diversos encuentros políticos, decidimos conformar este espacio, convencidos de que,
+            tanto en la vida como en la política, nadie te regala nada: uno mismo debe construir su propio futuro.
           </p>
         </div>
 
