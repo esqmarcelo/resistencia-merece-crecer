@@ -459,6 +459,25 @@ h3 {
   .mision-imagen img {
     height: auto;
   }
+
+  .quienes-intro p,
+  .mision-texto p {
+    text-align: left;
+  }
+
+  .mision-section {
+    display: block;
+  }
+
+  .mision-imagen {
+    width: 100%;
+    height: 250px;
+    margin-top: 20px;
+  }
+
+  .mision-texto {
+    width: 100%;
+  }
 }
 
 .eventos-grid {
