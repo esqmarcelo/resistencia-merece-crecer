@@ -1,6 +1,9 @@
+import { useState } from 'react'
 import { FaWhatsapp, FaInstagram, FaFacebookF } from 'react-icons/fa'
 
 function Contacto() {
+  const [whatsappAbierto, setWhatsappAbierto] = useState(false)
+
   return (
     <>
       <section className="container contacto-redes">
@@ -18,9 +21,33 @@ function Contacto() {
             </div>
             <h3>WhatsApp</h3>
             <p>Escribinos un mensaje directo</p>
-            <a href="#" className="red-btn red-btn-whatsapp">
+            <button
+              type="button"
+              className="red-btn red-btn-whatsapp"
+              onClick={() => setWhatsappAbierto(!whatsappAbierto)}
+            >
               Enviar mensaje
-            </a>
+            </button>
+            {whatsappAbierto && (
+              <div className="whatsapp-opciones">
+                <a
+                  href="https://wa.me/5493624921548"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="whatsapp-opcion"
+                >
+                  <strong>Jose</strong> — +54 9 362 492-1548
+                </a>
+                <a
+                  href="https://wa.me/5493624000000"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="whatsapp-opcion"
+                >
+                  <strong>Iris</strong> — +54 9 362 400-0000
+                </a>
+              </div>
+            )}
           </div>
           <div className="red-card">
             <div className="red-icon-circle red-icon-instagram">

@@ -699,6 +699,32 @@ h3 {
   margin-top: 0;
 }
 
+.whatsapp-opciones {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.whatsapp-opcion {
+  background-color: #f4f6f9;
+  border: 1px solid #dde3ea;
+  border-radius: 6px;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #0a2540;
+  font-size: 13px;
+  transition: background-color 0.2s;
+}
+
+.whatsapp-opcion:hover {
+  background-color: #e8ecf1;
+}
+
+.whatsapp-opcion strong {
+  color: #25D366;
+}
+
 .contacto-redes {
   text-align: center;
   padding-top: 5rem;
