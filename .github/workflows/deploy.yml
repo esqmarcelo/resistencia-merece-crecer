@@ -23,12 +23,19 @@ jobs:
       - name: Construir el proyecto
         run: npm run build
 
+      - name: Instalar lftp
+        run: sudo apt-get install -y lftp
+
       - name: Subir por FTP a DonWeb
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          protocol: ftps
-          local-dir: ./dist/
-          server-dir: /public_html/
+        env:
+          FTP_HOST: ${{ secrets.FTP_HOST }}
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+        run: |
+          lftp -c "
+          set ftp:ssl-force true;
+          set ftp:ssl-protect-data true;
+          set ssl:verify-certificate no;
+          open -u \$FTP_USERNAME,\$FTP_PASSWORD \$FTP_HOST;
+          mirror -R --delete --verbose ./dist/ /public_html/
+          "
