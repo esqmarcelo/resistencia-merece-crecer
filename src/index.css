@@ -876,3 +876,17 @@ h3 {
   cursor: pointer;
   z-index: 210;
 }
+
+.card-placeholder {
+  height: 260px;
+  background-color: #f9fafb;
+}
+
+.evento-placeholder {
+  height: 90px;
+  background-color: #f9fafb;
+}
+
+.evento-placeholder .evento-fecha {
+  background-color: #dde3ea;
+}

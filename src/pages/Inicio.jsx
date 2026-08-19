@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom'
 import { noticias } from '../data/noticias'
 
+const eventos = []
+
 function Inicio() {
   return (
     <>
@@ -23,45 +25,44 @@ function Inicio() {
       <section className="container inicio-preview">
         <h2>Últimas Noticias</h2>
         <div className="cards-grid">
-          {noticias.map((noticia) => (
-            <Link key={noticia.id} to={`/noticias/${noticia.id}`} className="card">
-              <div className="card-imagen" style={{ backgroundImage: `url(${noticia.imagen})`, backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
-              <div className="card-contenido">
-                <h3>{noticia.titulo}</h3>
-                <p>{noticia.resumen}</p>
-              </div>
-            </Link>
-          ))}
+          {noticias.length === 0
+            ? Array.from({ length: 3 }, (_, index) => <div key={index} className="card card-placeholder"></div>)
+            : noticias.map((noticia) => (
+                <Link key={noticia.id} to={`/noticias/${noticia.id}`} className="card">
+                  <div className="card-imagen" style={{ backgroundImage: `url(${noticia.imagen})`, backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+                  <div className="card-contenido">
+                    <h3>{noticia.titulo}</h3>
+                    <p>{noticia.resumen}</p>
+                  </div>
+                </Link>
+              ))}
         </div>
       </section>
 
       <section className="container inicio-preview">
         <h2>Próximos Eventos</h2>
         <div className="eventos-grid">
-          <div className="evento-card">
-            <div className="evento-fecha">
-              <span className="evento-mes">AGO</span>
-              <span className="evento-dia">15</span>
-            </div>
-            <div className="evento-info">
-              <span className="evento-categoria categoria-comunidad">Comunidad</span>
-              <h3>Asamblea Vecinal</h3>
-              <p>🕐 17:00 hs</p>
-              <p>📍 Plaza 25 de Mayo</p>
-            </div>
-          </div>
-          <div className="evento-card">
-            <div className="evento-fecha">
-              <span className="evento-mes">AGO</span>
-              <span className="evento-dia">23</span>
-            </div>
-            <div className="evento-info">
-              <span className="evento-categoria categoria-militancia">Militancia</span>
-              <h3>Jornada de Militancia</h3>
-              <p>🕐 10:00 hs</p>
-              <p>📍 Sede de la organización política</p>
-            </div>
-          </div>
+          {eventos.length === 0
+            ? Array.from({ length: 2 }, (_, index) => (
+                <div key={index} className="evento-card evento-placeholder">
+                  <div className="evento-fecha"></div>
+                  <div className="evento-info"></div>
+                </div>
+              ))
+            : eventos.map((evento) => (
+                <div key={evento.id} className="evento-card">
+                  <div className="evento-fecha">
+                    <span className="evento-mes">{evento.mes}</span>
+                    <span className="evento-dia">{evento.dia}</span>
+                  </div>
+                  <div className="evento-info">
+                    <span className={`evento-categoria ${evento.categoriaClase}`}>{evento.categoria}</span>
+                    <h3>{evento.titulo}</h3>
+                    <p>{evento.hora}</p>
+                    <p>{evento.ubicacion}</p>
+                  </div>
+                </div>
+              ))}
         </div>
       </section>
     </>
