@@ -44,7 +44,7 @@ function Contacto() {
                   rel="noopener noreferrer"
                   className="whatsapp-opcion"
                 >
-                  <strong>Iris</strong> — +54 9 362 400-0000
+                  <strong>Iris</strong> — +54 9 362
                 </a>
               </div>
             )}
