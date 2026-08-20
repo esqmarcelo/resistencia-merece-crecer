@@ -15,7 +15,7 @@ function Footer() {
         <div className="footer-col">
           <h3>Contacto</h3>
           <p>📍 Dodero 21 - Resistencia, Chaco</p>
-          <p>📞 +54 362 000-0000</p>
+          <p>📞 +54 362 492-1548</p>
           <p>✉️ resistenciamerececrecer@gmail.com</p>
         </div>
 
