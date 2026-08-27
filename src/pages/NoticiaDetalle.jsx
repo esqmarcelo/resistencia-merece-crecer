@@ -19,10 +19,16 @@ function NoticiaDetalle() {
       <img src={noticia.imagen} alt={noticia.titulo} className="noticia-detalle-imagen" />
       <p className="noticia-detalle-fecha">{noticia.fecha}</p>
       <h1>{noticia.titulo}</h1>
-      <p className="noticia-detalle-texto">{noticia.contenidoCompleto}</p>
-      <Link to={`/galeria#${noticia.albumId}`} className="ver-mas">
-        Ver álbum de fotos completo →
-      </Link>
+      <div className="noticia-detalle-texto">
+        {noticia.contenidoCompleto.split('\n\n').map((parrafo, index) => (
+          <p key={index} style={{ marginBottom: '16px' }}>{parrafo}</p>
+        ))}
+      </div>
+      {noticia.albumId && (
+        <Link to={`/galeria#${noticia.albumId}`} className="ver-mas">
+          Ver álbum de fotos completo →
+        </Link>
+      )}
     </section>
   )
 }
