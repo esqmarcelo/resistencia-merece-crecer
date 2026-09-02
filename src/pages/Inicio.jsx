@@ -29,7 +29,11 @@ function Inicio() {
             ? Array.from({ length: 3 }, (_, index) => <div key={index} className="card card-placeholder"></div>)
             : noticias.map((noticia) => (
                 <Link key={noticia.id} to={`/noticias/${noticia.id}`} className="card">
-                  <div className="card-imagen" style={{ backgroundImage: `url(${noticia.imagen})`, backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+                  {noticia.imagen ? (
+                    <img src={noticia.imagen} alt={noticia.titulo} className="card-imagen" />
+                  ) : (
+                    <div className="card-imagen"></div>
+                  )}
                   <div className="card-contenido">
                     <h3>{noticia.titulo}</h3>
                     <p>{noticia.resumen}</p>

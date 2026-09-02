@@ -16,7 +16,11 @@ function NoticiaDetalle() {
 
   return (
     <section className="container noticia-detalle">
-      <img src={noticia.imagen} alt={noticia.titulo} className="noticia-detalle-imagen" />
+      {noticia.imagen ? (
+        <img src={noticia.imagen} alt={noticia.titulo} className="noticia-detalle-imagen" />
+      ) : (
+        <div className="noticia-detalle-imagen"></div>
+      )}
       <p className="noticia-detalle-fecha">{noticia.fecha}</p>
       <h1>{noticia.titulo}</h1>
       <div className="noticia-detalle-texto">
