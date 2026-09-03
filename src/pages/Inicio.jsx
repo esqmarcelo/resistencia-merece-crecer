@@ -4,6 +4,8 @@ import { noticias } from '../data/noticias'
 const eventos = []
 
 function Inicio() {
+  const noticiasOrdenadas = [...noticias].sort((a, b) => b.id - a.id)
+
   return (
     <>
       <section
@@ -25,9 +27,9 @@ function Inicio() {
       <section className="container inicio-preview">
         <h2>Últimas Noticias</h2>
         <div className="cards-grid">
-          {noticias.length === 0
+          {noticiasOrdenadas.length === 0
             ? Array.from({ length: 3 }, (_, index) => <div key={index} className="card card-placeholder"></div>)
-            : noticias.map((noticia) => (
+            : noticiasOrdenadas.map((noticia) => (
                 <Link key={noticia.id} to={`/noticias/${noticia.id}`} className="card">
                   {noticia.imagen ? (
                     <img src={noticia.imagen} alt={noticia.titulo} className="card-imagen" />
