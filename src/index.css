@@ -275,6 +275,9 @@ h3 {
 .card-imagen {
   height: 280px;
   background-color: #dde3ea;
+  width: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .card-contenido {
