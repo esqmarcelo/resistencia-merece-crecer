@@ -17,7 +17,15 @@ function NoticiaDetalle() {
   return (
     <section className="container noticia-detalle">
       {noticia.imagen ? (
-        <img src={noticia.imagen} alt={noticia.titulo} className="noticia-detalle-imagen" />
+        <img
+          src={noticia.imagen}
+          alt={noticia.titulo}
+          className="noticia-detalle-imagen"
+          style={{
+            objectFit: noticia.id === 5 ? 'contain' : 'cover',
+            objectPosition: 'center'
+          }}
+        />
       ) : (
         <div className="noticia-detalle-imagen"></div>
       )}
