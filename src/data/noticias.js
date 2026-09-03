@@ -13,7 +13,7 @@ export const noticias = [
     titulo: "Reunión y debate sobre las PASO",
     resumen: "El espacio se reunió para debatir sobre la continuidad de las PASO y se manifestó a favor de mantenerlas.",
     contenidoCompleto: "El 1 de septiembre nos reunimos para debatir y analizar la continuidad de las PASO. Luego de intercambiar ideas, llegamos a la conclusión de que estamos a favor de que continúen, ya que representan una herramienta clave para garantizar la participación y brindar igualdad de oportunidades a todas las organizaciones y espacios políticos, especialmente a aquellos sin grandes estructuras.\n\nCreemos que eliminarlas beneficiaría únicamente a las estructuras políticas más grandes y consolidadas, mientras que mantenerlas permite que los distintos sectores puedan competir, participar y expresar sus propuestas en condiciones más democráticas.",
-    imagen: null,
+    imagen: "/noticia-paso.jpg",
     fecha: "1 de septiembre de 2026",
     albumId: null
   }
